@@ -33,6 +33,7 @@
         self.gif = [[UIImageView alloc] initWithFrame:self.view.bounds];
         [self.view addSubview:self.gif];
         self.gif.animationRepeatCount = 1;
+        self.gif.animationDuration = 4;
         self.gif.gifURL = [NSURL fileURLWithPath:path];
         [self.gif playGIFWithCompleted:^(BOOL finished) {
             NSLog(@"123");
